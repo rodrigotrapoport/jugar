@@ -19,5 +19,5 @@
 
     //Llamado a la función
     mail($destination, $title, $carta );
-    header(Location:mensaje_de_envio.html)
+    header(Location:mensaje_de_envio_psicopedagogia.html)
 ?>

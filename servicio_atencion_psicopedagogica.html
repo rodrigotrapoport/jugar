@@ -661,46 +661,39 @@
 							<strong>señalar la edad</strong> de tu bebé o niño.</p>
 						<h2 class="mb-4">Formulario de Contacto</h2>
 					</div>
-					<form method="POST" action="send_email.php" class="appointment-form ftco-animate">
+					<form method="POST" action="send_email_psicopedagogia.php" class="appointment-form ftco-animate">
 						<div class="d-md-flex">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Escribi tu nombre sin apellido"
-									name="name">
+								<input type="text" class="form-control" placeholder="Escribi tu nombre sin apellido *" name="name" required>
 							</div>
 							<div class="form-group ml-md-4">
-								<input type="text" class="form-control" placeholder="Escribi tu e-mail" name="email">
+								<input type="text" class="form-control" placeholder="Escribi tu e-mail *" name="email" required>
 							</div>
 						</div>
 						<div class="d-md-flex">
 							<div class="form-group">
 								<div class="form-field">
 									<div class="select-wrap">
-										<div class="icon"><span class="ion-ios-arrow-down"></span></div>
-										<select name="" id="" class="form-control">
-											<option value="">Selecciona tu interés</option>
-											<option value="">Estimulación Temprana</option>
-											<option value="">Talleres de Juegoteca Online</option>
-											<option value="">Atención psicopedagogica</option>
-											<option value="">Atención psicomotricidad</option>
-											<option value="">Otros Servicios</option>
-										</select>
+						
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Servicio de interes" name="subject">
+										</div>
+						
 									</div>
 								</div>
+								<div class="form-group ml-md-4">
+									<input type="text" class="form-control" placeholder="Tu número de Whatsapp *" name="phone" required>
+								</div>
 							</div>
-							<div class="form-group ml-md-4">
-								<input type="text" class="form-control" placeholder="Whatsapp (ingresa tu número)"
-									name="phone">
+							<div class="d-md-flex">
+								<div class="form-group">
+									<textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Escribi tu mensaje *"
+										name="message"></textarea>
+								</div>
+								<div class="form-group ml-md-4">
+									<input type="submit" value="Enviar" class="btn btn-secondary py-3 px-4">
+								</div>
 							</div>
-						</div>
-						<div class="d-md-flex">
-							<div class="form-group">
-								<textarea name="" id="" cols="30" rows="2" class="form-control"
-									placeholder="Escribi tu mensaje" name="message"></textarea>
-							</div>
-							<div class="form-group ml-md-4">
-								<input type="submit" value="Enviar" class="btn btn-secondary py-3 px-4">
-							</div>
-						</div>
 					</form>
 	
 				</div>
@@ -771,92 +764,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- Precios -->
-	<section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-2">
-				<div class="col-md-8 text-center heading-section ftco-animate">
-					<h2 class="mb-4 ftco-animate"><span>Nuestros</span> Precios</h2>
-					<p>Los precios se cobran por mes adelantado. Si hay una cancelación de 24 horas de parte del cliente, se
-						puede re-agendarla la sesión dentro del mes de contratación. No son validas las recuperaciones al
-						mes siguiente o posteriores.</p>
-					<p>Consulta por nuestros métodos de pago online. Para Argentina utilizamos Mercado Pago, para el resto
-						del mundo usamos Global66, SiPago o criptomonedas.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="pricing-entry bg-light pb-4 text-center">
-						<div>
-							<h3 class="mb-3">Terapia Floral para la familia</h3>
-							<p>Precio anterior: <s>AR$ 4000</s></p>
-							<p><span class="price">AR$ 3000</span> <span class="per">/ por mes</span></p>
-							<p><span class="price">USD aprox. 29</span> <span class="per">/ por mes (dependiendo de la
-									cotización)</span></p>
-						</div>
-						<div class="img" style="background-image: url(images/bk_madre_estimulando.jpg);"></div>
-						<div class="px-4">
-							<p>Para todos en la familia</p>
-						</div>
-						<p class="button text-center"><a href="precios.html"
-								class="btn btn-secondary px-4 py-3">Contratar</a></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="pricing-entry bg-light pb-4 text-center">
-						<div>
-							<h3 class="mb-3">Atención Psicopedagogica</h3>
-							<p>Precio anterior: <s>AR$ 7000</s></p>
-							<p><span class="price">AR$ 6000</span> <span class="per">/ por mes</span></p>
-							<p><span class="price">USD aprox. 58</span> <span class="per">/ por mes (dependiendo de la
-									cotización)</span></p>
-						</div>
-						<div class="img" style="background-image: url(images/bk_psicopedagogia.jpg);"></div>
-						<div class="px-4">
-							<p>Para niños y adolecentes.</p>
-						</div>
-						<p class="button text-center"><a href="precios.html" class="btn btn-primary px-4 py-3">Contratar</a>
-						</p>
-					</div>
-				</div>
-	
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="pricing-entry bg-light active pb-4 text-center">
-						<div>
-							<h3 class="mb-3">Atención Psicomotricidad</h3>
-							<p>Precio anterior: <s>AR$ 7000</s></p>
-							<p><span class="price">AR$ 6000</span> <span class="per">/ por mes</span></p>
-							<p><span class="price">USD aprox. 58</span> <span class="per">/ por mes (dependiendo de la
-									cotización)</span></p>
-						</div>
-						<div class="img" style="background-image: url(images/psicomotricidad_espacio.jpg);"></div>
-						<div class="px-4">
-							<p>Para niños y adolecentes.</p>
-						</div>
-						<p class="button text-center"><a href="precios.html"
-								class="btn btn-tertiary px-4 py-3">Contratar</a></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="pricing-entry bg-light pb-4 text-center">
-						<div>
-							<h3 class="mb-3">Talleres de Juegos y Sociabilidad </h3>
-							<p>Precio anterior: <s>AR$ 5000</s></p>
-							<p><span class="price">AR$ 4000</span> <span class="per">/ por mes</span></p>
-							<p><span class="price">USD aprox. 39</span> <span class="per">/ por mes (dependiendo de la
-									cotización)</span></p>
-						</div>
-						<div class="img" style="background-image: url(images/talleres.jpg);"></div>
-						<div class="px-4">
-							<p>Para niños de 4 a 10 años.</p>
-						</div>
-						<p class="button text-center"><a href="precios.html"
-								class="btn btn-quarternary px-4 py-3">Contratar</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> 
+
 
 	<!--  Galeria de Imagenes -->
 		<section class="ftco-gallery">
@@ -895,90 +803,118 @@
     </section>
 
 		
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-6 col-lg-3">
-            <div class="ftco-footer-widget mb-5">
-            	<h2 class="ftco-heading-2">¿Tienes preguntas?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">Av. Alvarez Thomas 646, CP1427, CABA, Argentina. </span></li>
-	                <li><a href="https://api.whatsapp.com/send?phone=5491139430198" target="_blank"><span class="icon icon-phone"></span><span class="text">+5491139430198</span></a></li>
-	                <li><a href="mailto:info@jugarestimulacionyjuegoteca.com"><span class="icon icon-envelope"></span><span class="text"> info@jugarestimulacionyjuegoteca.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="ftco-footer-widget mb-5">
-              <h2 class="ftco-heading-2">Blog + News</h2>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/Los-bebés-expuestos-a-la-estimulación-obtienen-un-mayor-impulso-cerebral.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Un estudio encuentra que la Estimulación Infantil es clave para el desarrollo del cerebro</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Dec 17, 2019</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="block-21 mb-5 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/Un-estudio-encuentra-que-la-estimulación-infantil-es-clave-para-el-desarrollo-del-cerebro.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Los bebés expuestos a la estimulación obtienen un mayor impulso cerebral</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Dec 07, 2019</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="ftco-footer-widget mb-5 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="index.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Inicio</a></li>
-                <li><a href="nosotros.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Nosotros</a></li>
-                <li><a href="servicios.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Servicios</a></li>
-                <li><a href="precios.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Precios</a></li>
-                <li><a href="contacto.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Contactos</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="ftco-footer-widget mb-5">
-            	<h2 class="ftco-heading-2">Subscrite a nuestro Newsletter!</h2>
-              <form action="https://jugarestimulacionyjuegoteca.us20.list-manage.com/subscribe/post?u=a5c7546a956ae109c6f922fbf&amp;id=30ce6cc1e8" method="post" target="_blank" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="subscribe-form">
-                <div class="form-group">
-					<input type="email" value="" name="EMAIL" id="mce-EMAIL" class="form-control mb-2 text-center" placeholder="Escribe tu email" required>
-                  	<input type="text" value="" name="FNAME" id="mce-FNAME"  class="form-control mb-2 text-center" placeholder="Escribe tu nombre" required>
-                  	<input type="submit" value="Subscribete" name="subscribe" id="mc-embedded-subscribe" class="form-control submit px-3">
-                </div>
-              </form>
-            </div>
-            <div class="ftco-footer-widget mb-5">
-            	<h2 class="ftco-heading-2 mb-0">Conecta con nosotros</h2>
-            	<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                <li class="ftco-animate"><a href="https://www.facebook.com/JugarEstimulaciontempranaespaciodejuegoteca/"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="https://www.instagram.com/jugarestimulaciontemprana/"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Esta web fue realizada por <a href="https://digipop.tech" target="_blank">DigiPop</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-        </div>
-      </div>
-    </footer>
+	<footer class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md-6 col-lg-3">
+					<div class="ftco-footer-widget mb-5">
+						<h2 class="ftco-heading-2">¿Tienes preguntas?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="icon icon-map-marker"></span><span class="text">Av. Alvarez Thomas 646,
+										CP1427, CABA, Argentina. </span></li>
+								<li><a href="https://api.whatsapp.com/send?phone=5491139430198" target="_blank"><span
+											class="icon icon-phone"></span><span class="text">+5491139430198</span></a></li>
+								<li><a href="mailto:info@jugarestimulacionyjuegoteca.com"><span
+											class="icon icon-envelope"></span><span class="text">
+											info@jugarestimulacionyjuegoteca.com</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="ftco-footer-widget mb-5">
+						<h2 class="ftco-heading-2">Blog + News</h2>
+						<div class="block-21 mb-4 d-flex">
+							<a class="blog-img mr-4"
+								style="background-image: url(images/Los-bebés-expuestos-a-la-estimulación-obtienen-un-mayor-impulso-cerebral.jpg);"></a>
+							<div class="text">
+								<h3 class="heading"><a
+										href="Un_estudio_encuentra_que_la_Estimulacion_Infantil_es_clave_para_el_desarrollo_del_cerebro.html">Un
+										estudio encuentra que la Estimulación Infantil es clave para el desarrollo del
+										cerebro</a></h3>
+								<div class="meta">
+									<div><a href="#"><span class="icon-calendar"></span> Dic 17, 2019</a></div>
+									<div><a href="#"><span class="icon-person"></span> Admin</a></div>
+									<div><a href="#"><span class="icon-chat"></span> 19</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="block-21 mb-5 d-flex">
+							<a class="blog-img mr-4"
+								style="background-image: url(images/Un-estudio-encuentra-que-la-estimulación-infantil-es-clave-para-el-desarrollo-del-cerebro.jpg);"></a>
+							<div class="text">
+								<h3 class="heading"><a
+										href="Los_bebes_expuestos_a_la_estimulacion_obtienen_un_mayor_impulso_cerebral.html">Los
+										bebés expuestos a la estimulación obtienen un mayor impulso cerebral</a></h3>
+								<div class="meta">
+									<div><a href="#"><span class="icon-calendar"></span> Dic 07, 2019</a></div>
+									<div><a href="#"><span class="icon-person"></span> Admin</a></div>
+									<div><a href="#"><span class="icon-chat"></span> 19</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="ftco-footer-widget mb-5 ml-md-4">
+						<h2 class="ftco-heading-2">Links</h2>
+						<ul class="list-unstyled">
+							<li><a href="index.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Inicio</a></li>
+							<li><a href="nosotros.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Nosotros</a>
+							</li>
+							<li><a href="servicios.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Servicios</a>
+							</li>
+							<li><a href="precios.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Precios</a>
+							</li>
+							<li><a href="contacto.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Contactos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="ftco-footer-widget mb-5">
+						<h2 class="ftco-heading-2">Subscrite a nuestro Newsletter!</h2>
+						<form
+							action="https://jugarestimulacionyjuegoteca.us20.list-manage.com/subscribe/post?u=a5c7546a956ae109c6f922fbf&amp;id=30ce6cc1e8"
+							method="post" target="_blank" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+							class="subscribe-form">
+							<div class="form-group">
+								<input type="email" value="" name="EMAIL" id="mce-EMAIL"
+									class="form-control mb-2 text-center" placeholder="Escribe tu email" required>
+								<input type="text" value="" name="FNAME" id="mce-FNAME"
+									class="form-control mb-2 text-center" placeholder="Escribe tu nombre" required>
+								<input type="submit" value="Subscribete" name="subscribe" id="mc-embedded-subscribe"
+									class="form-control submit px-3">
+							</div>
+						</form>
+					</div>
+					<div class="ftco-footer-widget mb-5">
+						<h2 class="ftco-heading-2 mb-0">Conecta con nosotros</h2>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+							<li class="ftco-animate"><a
+									href="https://www.facebook.com/JugarEstimulaciontempranaespaciodejuegoteca/"><span
+										class="icon-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.instagram.com/jugarestimulaciontemprana/"><span
+										class="icon-instagram"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+	
+					<p>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Esta web
+						fue realizada por <a href="https://digipop.tech" target="_blank">DigiPop</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
     
   
 
